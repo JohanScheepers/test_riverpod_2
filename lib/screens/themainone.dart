@@ -5,11 +5,11 @@ import 'package:test_riverpod_2/screens/button.dart';
 import 'package:test_riverpod_2/widgets/middelScreen.dart';
 
 final screenProvider = StateProvider<int>((ref) {
-  return 2;
+  return 1;
 });
 
-class WideLayout extends ConsumerWidget {
-  const WideLayout({
+class TheMainOne extends ConsumerWidget {
+  const TheMainOne({
     super.key,
   });
 

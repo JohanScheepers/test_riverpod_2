@@ -28,7 +28,7 @@ class MainApp extends StatelessWidget {
                 fontSize: 36),
           ),
         ),
-        body: WideLayout(),
+        body: TheMainOne(),
       ),
     );
   }
