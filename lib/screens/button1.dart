@@ -3,6 +3,7 @@ import 'package:riverpod/riverpod.dart';
 
 button1(StateController<int> value) {
   return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
     children: [
       ElevatedButton(
           onPressed: () => value.state = 2,

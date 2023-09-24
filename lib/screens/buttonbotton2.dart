@@ -3,6 +3,7 @@ import 'package:riverpod/riverpod.dart';
 
 button2(StateController<int> value) {
   return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
     children: [
       const Text(
         'Button 2',
