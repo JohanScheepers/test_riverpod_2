@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:test_riverpod_2/screens/bottom_button.dart';
-import 'package:test_riverpod_2/widgets/button_middle.dart';
 import 'package:test_riverpod_2/widgets/middelScreen.dart';
 
 final screenProvider = StateProvider<int>((ref) {
@@ -20,7 +19,7 @@ class TheMainOne extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     StateController<int> value = ref.watch(screenProvider.notifier);
     final number = ref.watch(screenProvider);
-    print(value);
+    print(number);
     return Container(
       height: double.infinity,
       // width: double.infinity,
