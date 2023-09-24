@@ -50,7 +50,7 @@ class TheMainOne extends ConsumerWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              middleScreen(ref.read(screenProvider.notifier)),
+              middleScreen(ref.watch(screenProvider.notifier)),
             ],
           ),
           SizedBox(

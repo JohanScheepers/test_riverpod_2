@@ -7,12 +7,12 @@ import 'package:test_riverpod_2/screens/buttonbuttonbutton3.dart';
 
 Widget middleScreen(StateController<int> value) {
   if (value.state == 1) {
-    return home(value);
+    return button1(value);
   } else if (value.state == 2) {
-    return whoWeAre(value);
+    return button2(value);
   } else if (value.state == 3) {
-    return products(value);
+    return button3(value);
   } else {
-    return products(value);
+    return button3(value);
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod/riverpod.dart';
 
-home(StateController<int> value) {
+button1(StateController<int> value) {
   return Row(
     children: [
       Text(

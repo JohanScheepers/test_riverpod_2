@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod/riverpod.dart';
 
-whoWeAre(StateController<int> value) {
+button2(StateController<int> value) {
   return Row(
     children: [
       Text(

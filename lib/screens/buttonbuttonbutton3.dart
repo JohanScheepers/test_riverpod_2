@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod/riverpod.dart';
 
-products(StateController<int> value) {
+button3(StateController<int> value) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
