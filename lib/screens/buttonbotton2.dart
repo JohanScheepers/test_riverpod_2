@@ -4,7 +4,7 @@ import 'package:riverpod/riverpod.dart';
 button2(StateController<int> value) {
   return Row(
     children: [
-      Text(
+      const Text(
         'Button 2',
         style: TextStyle(
             color: Color.fromARGB(255, 158, 212, 237),
@@ -12,12 +12,12 @@ button2(StateController<int> value) {
             fontWeight: FontWeight.bold,
             fontSize: 25),
       ),
-      SizedBox(
+      const SizedBox(
         width: 10,
       ),
       ElevatedButton(
           onPressed: () => value.state = 3,
-          child: Text('Button 3',
+          child: const Text('Button 3',
               style: TextStyle(
                   color: Colors.amberAccent,
                   fontStyle: FontStyle.italic,

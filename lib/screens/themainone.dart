@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:test_riverpod_2/screens/button.dart';
+import 'package:test_riverpod_2/screens/bottom_button.dart';
+import 'package:test_riverpod_2/widgets/button_middle.dart';
 import 'package:test_riverpod_2/widgets/middelScreen.dart';
 
 final screenProvider = StateProvider<int>((ref) {
@@ -20,6 +20,7 @@ class TheMainOne extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     StateController<int> value = ref.watch(screenProvider.notifier);
     final number = ref.watch(screenProvider);
+    print(value);
     return Container(
       height: double.infinity,
       // width: double.infinity,
@@ -37,26 +38,21 @@ class TheMainOne extends ConsumerWidget {
             children: [
               Text(
                 'The value is $number',
-                style: TextStyle(
+                style: const TextStyle(
                     color: Color.fromARGB(255, 252, 161, 3),
                     fontWeight: FontWeight.w900,
                     fontSize: 35),
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              middleScreen(ref.watch(screenProvider.notifier)),
-            ],
-          ),
-          SizedBox(
+          middleScreen(ref.watch(screenProvider.notifier)),
+          const SizedBox(
             height: 10,
           ),
-          buttons(value)
+          BottomButton(value: value)
         ],
       ),
     );
